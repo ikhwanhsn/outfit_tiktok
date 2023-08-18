@@ -1,11 +1,17 @@
+import '@splidejs/react-splide/css';
+import Kaos from './components/Kaos';
+import Topi from './components/Topi';
+import Celana from './components/Celana';
+import Sepatu from './components/Sepatu';
+
 function App() {
 
   return (
-    <div className="mt-32 text-center">
-      <h1 className="text-3xl font-bold">
-        Template Vite (React + Tailwind)
-      </h1>
-      <button className='px-5 py-2 mt-5 text-white bg-blue-500 rounded-full hover:bg-blue-600'>Check Version</button>
+    <div className="flex flex-col items-center w-full h-screen bg-gray-500">
+      <Topi/>
+      <Kaos/>
+      <Celana/>
+      <Sepatu/>
     </div>
   )
 }
