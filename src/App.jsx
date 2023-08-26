@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center w-full h-screen bg-gray-500">
-      {!hide && <button className='absolute top-3 left-3 bg-slate-400 px-2 py-2 flex items-center gap-2 rounded-md' onClick={() => setWoman(!woman)}>
+      {!hide && <button className='absolute flex items-center gap-2 px-2 py-2 rounded-md top-3 left-3 bg-slate-400' onClick={() => setWoman(!woman)}>
         {!woman? <FcBusinessman className='scale-[1.7]'/> : <FcBusinesswoman className='scale-[1.7]'/>}
       </button>}
       {!hide && <TbEye className='absolute scale-[2] top-5 right-5 cursor-pointer' onClick={handleHide}/>}
